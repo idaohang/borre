@@ -1,0 +1,39 @@
+
+VERY EARLY COMMENTS TO THIS RTK MATLAB CODE
+
+
+The M-script rtk is an early attempt to write a code for real-time
+kinematic processing of GPS data.
+
+The data aquisition tries to be as close to a real time situation as
+possible.  We plan to use the serial i/o facility.
+
+The data transfer happens according to the original Ashtech structures.  This
+speeds up the process tremendously compared to using fread and subsequent
+string manipulation.
+
+
+There are still a lot of facilities to be implemented:
+
+1.  Weighting of observations according to elevation angle
+
+2.  Block elimination of baseline components so that a on-the-fly integer
+estimation can be done correctly
+
+3.  Further investigation on how many initial epochs are necessary to get a
+reliable Lambda solution.  In fact we must implement a procedure for the
+success rate.
+
+4.  On-line ploting of baseline components using draw now command
+
+5.  Implement structures that fit other receiver makes.
+
+6.  And many more general facilities
+
+
+
+March 13, 2003
+
+Kai
+
+

@@ -1,0 +1,53 @@
+
+                           MOTOROLA GPS 
+                   ONCORE GPS CONTROLLER SOFTWARE
+ 
+
+LOADING
+-------
+
+     In order to correctly load the GPS Control Program software,
+place the program disk into the appropriate size disk drive and
+transfer control to the disk drive ( ex: a: <CR> ).
+
+     Type the following command at the prompt:
+
+              gpsload <source_drive> <target_drive> <CR>
+              ( ex: gpsload a: c: <CR> )
+
+     The GPS Control Program and all essential utility files will
+be transferred into a subdirectory of the target drive's root
+directory.  The name of the subdirectory will be \GPS.  If this
+subdirectory already exists, a prompt will be provided to 
+determine if the user wishes to over-write any files with like 
+names or terminate the GPSLOAD program.
+
+     Provided within the utility subdirectory of the newly created
+GPS Control Program directory are two files: 1.) MARKNET.EXE, and
+2.) RELNET.EXE.  These files are part of the TSR Utilities package
+produced by TurboPower Software and are provided free of charge.
+
+
+EXECUTING
+---------
+
+     In order to execute the GPS Control Program, the user's
+present working directory must be (a) either in the GPS controller
+program directory (e.g. c:\gps), or (b) have the directory called
+out in the DOS "PATH=" stream of the PC's AUTOEXEC.BAT file.  The 
+GPS Control Program will start by typing the following at the 
+prompt:    
+        gps <CR>
+
+CREATING A MASTER DISK
+----------------------
+
+      To create more diskettes similar to the master diskette you
+received from PNSB, be sure you are in the same directory as the 
+batch files are located in, then use the appropriate batch file 
+depending upon which diskette drive your new disk resides in.  If
+your diskette is in drive a: run the file COPYTOA.BAT by typing
+the following at the prompt:
+                             copytoa <CR>
+
+Or, if your diskette is in drive b: execute the file COPYTOB.BAT.

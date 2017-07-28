@@ -1,0 +1,34 @@
+
+The last few years I have been using Oncore GPS boards from Motorola for development
+purposes.  The early eight channel Oncore receiver is nowadays substituted by the 12 
+channel M12 board.
+
+Recently the Matlab 6 version was available.  That version has a powerful
+serial I/O tool.  So the idea came to write relevant M-files for
+communicating with the M12 board.  At the moment I want to share two files:
+
+m12_data
+m12_alm
+
+m12_data handles the default data, unpacks the bits, and assigns the variables.
+
+From here you may create a graphic user interface (GUI) that is very much like
+the WinOncore s/w that comes with the board.  However additionally you need to
+download the almanac.  This leads to the necessity of uploading a binary command.
+It took me some time to figure out how to do that: computing the checksum was 
+a tricky thing.
+
+I hope that I have found a procedure that can be useful when uploading the
+commands.
+
+When unpacking the bits I had to deal with the concept of two's complement, a
+technique well known in the DSP community.
+
+I hope you find my basic code useful and from there create beautiful GUI's.
+
+I'm interested in receiving comments or information about errors to
+borre@kom.auc.dk
+
+
+/Kai
+

@@ -1,0 +1,10 @@
+************ SITE INFORMATION *********************************
+NAME  WORDS   WEEK   TIME    SES RCR ANT MMDD OPR CODE             TYPE
+ROV2  587924 1005   390916    _  AA_ ___ ____ ___ _____________  GEODETIC
+
+          HI   T-DRY T-WET  HUMIDITY  PRESSURE 
+BEFORE  1.9300    0     0      0        0.0 
+AFTER   1.9300    0     0      0        0.0 
+
+RECEIVER Type:   Z-XII3 Nav: 2J00  Channel: 1C63  Options: C00
+***************************************************************
